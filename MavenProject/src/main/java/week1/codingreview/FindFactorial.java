@@ -10,7 +10,7 @@ public class FindFactorial {
 		return fact;
 	}
 	public static void main(String[] args) {
-		int number = 5;
+		int number = 8;
 		int res = getFactorial(number);
 		System.out.println("The Factorial of "+ number + "! is: " + res);
 	}

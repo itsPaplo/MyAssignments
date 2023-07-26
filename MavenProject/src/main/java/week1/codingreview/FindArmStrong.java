@@ -30,7 +30,7 @@ public class FindArmStrong {
 	}
 	
 	public static void main(String[] args) {
-		long number = 371;
+		long number = 153;
 		boolean res = isArmStrong(number);
 		if(res==true) {
 			System.out.println("The Given number " + number + " is an Armstrong number ");

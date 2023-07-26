@@ -12,12 +12,12 @@ public class ReverseString {
 	
 	public static void main(String[] args) {
 		String str= "TestLeaf";
-		String res = reverseString(str);
-		if(res.length()==0) {
+		String result = reverseString(str);
+		if(result.length()==0) {
 			System.out.println("Invalid Input");
 		}
 		else {
-		System.out.println("The Reverse of the given string " + str + " is: " + res);
+		System.out.println("The Reverse of the given string " + str + " is: " + result);
 		}
 			
 	}
