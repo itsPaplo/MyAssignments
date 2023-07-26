@@ -4,7 +4,6 @@ public class FindAnagram {
 
 	public static boolean isAnagram(String input1, String input2) {
 		int count=0;
-		System.out.println(input1 + " " + input2);
 		if(input1.length()!=input2.length()) {
 			return false;
 		}
@@ -15,22 +14,22 @@ public class FindAnagram {
 						count++;
 					}
 				}
+				if(count==0) {
+					return false;
+				}
 			}				
 			if(count>=input1.length()) {
 				return true;
 			}
-			else {
-				return false;
-			}
 		}
-		
-		
+		return false;
 	}
+	
 	public static void main(String[] args) {
-		String str1 = "amma";
-		String str2 = "mama";
-		String s1 = str1.toLowerCase();
-		String s2 = str2.toLowerCase();
+		String str1 = "School Master";
+		String str2 = "The Class room";
+		String s1 = str1.replaceAll("\\s","").toLowerCase();
+		String s2 = str2.replaceAll("\\s","").toLowerCase();
 		boolean res = isAnagram(s1, s2);
 		if(res == true) {
 			System.out.println("The Given words " + s1 + " and " + s2 + " are Anagrams");
