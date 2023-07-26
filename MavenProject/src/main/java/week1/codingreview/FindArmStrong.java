@@ -3,40 +3,42 @@ package week1.codingreview;
 public class FindArmStrong {
 	
 	public static boolean isArmStrong(long num) {
-		long temp, sum, rem1, rem2;
-		temp = num;
-		for(int i=0; i<num;i++) {
-			rem1 = temp%10;
-			sum = temp/10;
-			if (sum <= 9) {
-				sum = sum * sum * sum +  rem1 * rem1 * rem1;
-			}
-			else {
-				temp = sum;				
-				rem2 = temp%10;
-				sum = temp/10;
-				sum = sum * sum * sum + rem2 * rem2 * rem2 + rem1 * rem1 * rem1;				
-			}
-			
-			if(sum == num) { 
-				return true;
-			} 
-			else {
-				temp = sum; 				
-			}
+		long temp, reminder, prod=1, sum = 0;
+		int digit=0, i=0, j=0;
+		temp=num;
+		for(i=0;temp>0;i++) {
+			temp = temp/10;
+			digit++;			
 		}
-		return false;
-
+		//System.out.println("Digits: " + digit);
+		temp=num;
+		for(i=0;temp>0;i++) {
+			reminder=temp%10;
+			prod=1;
+			for(j=0;j<digit;j++) {
+				prod=prod*reminder;				
+				//System.out.println("reminder: " + reminder +" " + "Prod: " + prod);
+			}
+			sum=sum+prod;	
+			//System.out.println("sum:" + sum + " " + "prod: " + prod );
+			temp=temp/10;
+		}
+		if(sum == num) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	public static void main(String[] args) {
-		long number = 153;
+		long number = 4679307774l;
 		boolean res = isArmStrong(number);
-		if(res==true) {
-			System.out.println("The Given number " + number + " is an Armstrong number ");
+		if(res == true) {
+			System.out.println("The Given number " + number + " is an Armstrong number");
 		}
 		else {
-			System.out.println("The Given number " + number + " is not an Armstrong number ");
+			System.out.println("The Given number " + number + " is not an Armstrong number");
 		}
 	}
 
