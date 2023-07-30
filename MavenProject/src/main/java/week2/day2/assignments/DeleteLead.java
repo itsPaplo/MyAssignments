@@ -1,12 +1,8 @@
 package week2.day2.assignments;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class DeleteLead {
 	public static void main(String[] args) throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();
@@ -44,9 +40,9 @@ public class DeleteLead {
 		else {
 			System.out.println("Lead id is not deleted");	
 		}
-		
+
 		driver.close();
-		
+
 	}
 
 }
