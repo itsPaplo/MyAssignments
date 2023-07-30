@@ -45,6 +45,8 @@ public class DeleteLead {
 			System.out.println("Lead id is not deleted");	
 		}
 		
+		driver.close();
+		
 	}
 
 }
