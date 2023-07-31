@@ -88,6 +88,8 @@ public class LeafGroundButtons {
 		}
 		System.out.println('\n'+ "There are : " + count + " rounded buttons");	
 		
+		driver.close();
+		
 	}
 	
 	public static int removeChar(String str) {
