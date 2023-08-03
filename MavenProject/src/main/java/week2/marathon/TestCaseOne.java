@@ -22,11 +22,7 @@ public class TestCaseOne {
 		driver.findElement(By.xpath("//label[contains(text(),'Going')]/preceding-sibling::input[contains(@class,'autocomplete')]")).sendKeys("Bangalore");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//ul[contains(@class,'autocomplete ')]/li[text()='Bangalore']")).click();
-		
-					
-				
-		
-		//driver.findElement(By.xpath("//label[contains(text(),'Date')]/preceding-sibling::input")).click();
+
 		driver.findElement(By.xpath("(//div[contains(@class,'pt-2')])[3]//input")).click();
 		Thread.sleep(400);
 		driver.findElement(By.xpath("//a[text()='4']")).click();
