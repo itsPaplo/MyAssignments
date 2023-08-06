@@ -5,26 +5,26 @@ public class ReverseEvenWords {
 	public static void main(String[] args) {
 
 		String test = "I am a software tester"; 
-		String[] trmdwrd = test.split(" ");
-		String rvrsd = "";
-		for(int i=0;i<trmdwrd.length;i++) {
+		String[] testarr = test.split(" ");
+		String teststr = "";
+		for(int i=0;i<testarr.length;i++) {
 			if(i%2==1) {				
-				String rwchr="";
-				char[] c = trmdwrd[i].toCharArray();
+				String testchr="";
+				char[] c = testarr[i].toCharArray();
 
 				for(int j=c.length-1;j>=0;j--) {
 					char[] crw = new char[c.length];
 					crw[j] = c[j];
-					rwchr = rwchr + crw[j];
+					testchr = testchr + crw[j];
 				}
 
-				rvrsd = rvrsd + rwchr + " ";
+				teststr = teststr + testchr + " ";
 			}
 			else {
-				rvrsd = rvrsd + trmdwrd[i] + " ";
+				teststr = teststr + testarr[i] + " ";
 			}
 		}
 
-		System.out.println("The words in the Even position reversed will be : " + rvrsd);
+		System.out.println("The words in the Even position reversed will be : " + teststr);
 	}
 }
