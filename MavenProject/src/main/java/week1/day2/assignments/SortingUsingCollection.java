@@ -1,9 +1,6 @@
 package week1.day2.assignments;
 
 import java.util.Arrays;
-import java.util.Collections;
-
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class SortingUsingCollection {
 	
