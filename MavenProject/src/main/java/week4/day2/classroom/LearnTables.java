@@ -26,7 +26,7 @@ public class LearnTables {
 		WebElement table = driver.findElement(By.xpath("//table[contains(@class,'TrainListHeader')]/tbody"));		
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
 		//List<WebElement> cols = rows.get(1).findElements(By.tagName("td"));
-		
+		System.out.println("The Available trains are:");
 		for(int i=2;i<rows.size();i++) {
 			System.out.println(driver.findElement(By.xpath("//table[contains(@class,'TrainListHeader')]/tbody/tr["+i+"]/td[2]")).getText());			
 		}
