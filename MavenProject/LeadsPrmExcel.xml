@@ -6,11 +6,11 @@
 	<parameter name="password" value="crmsfa"></parameter>
 	<test name="Leads">
 		<classes>
-			<class name="week6.day1.classroom.CreateLead" />
-			<class name="week6.day1.classroom.EditLead" />
-			<class name="week6.day1.classroom.DuplicateLead" />
-			<class name="week6.day1.classroom.MergeLead" />
-			<class name="week6.day1.classroom.DeleteLead" />
+			<class name="week6.day1.assignments.CreateLead" />
+			<class name="week6.day1.assignments.EditLead" />
+			<class name="week6.day1.assignments.DuplicateLead" />
+			<class name="week6.day1.assignments.MergeLead" />
+			<class name="week6.day1.assignments.DeleteLead" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
