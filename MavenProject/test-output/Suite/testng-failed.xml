@@ -6,22 +6,14 @@
   <parameter name="username" value="DemoSalesManager"/>
   <test thread-count="1" verbose="5" name="Leads(failed)">
     <classes>
-      <class name="week6.day1.classroom.DeleteLead">
+      <class name="week6.day1.assignments.DeleteLead">
         <methods>
-          <include name="runDelete" invocation-numbers="0 1 2"/>
-          <include name="setSheet"/>
-          <include name="postCondition"/>
           <include name="preCondition"/>
-        </methods>
-      </class> <!-- week6.day1.classroom.DeleteLead -->
-      <class name="week6.day1.classroom.DuplicateLead">
-        <methods>
+          <include name="runDelete" invocation-numbers="1"/>
           <include name="postCondition"/>
-          <include name="runDuplicate" invocation-numbers="0 2"/>
           <include name="setSheet"/>
-          <include name="preCondition"/>
         </methods>
-      </class> <!-- week6.day1.classroom.DuplicateLead -->
+      </class> <!-- week6.day1.assignments.DeleteLead -->
     </classes>
   </test> <!-- Leads(failed) -->
 </suite> <!-- Failed suite [Suite] -->
