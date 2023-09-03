@@ -9,34 +9,24 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Login {
-	
-	public ChromeDriver driver;
-	
-	@Given("Browser launched and is maximised and is in Login page")
-	public void browserLaunch() {		
-		driver = new ChromeDriver();
-		driver.get("http://leaftaps.com/opentaps/control/main");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(14));		
+public class Login extends BaseClass{
+
+	@And("Enter the username as {string}")
+	public void enterUsername(String uname) {
+		driver.findElement(By.id("username")).sendKeys(uname);
 	}
-	
-	@And("Enter the correct username")
-	public void enterUsername() {
-		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
+
+	@And("Enter the password as {string}")
+	public void enterPassword(String pwrd) {
+		driver.findElement(By.id("password")).sendKeys(pwrd);
 	}
-	
-	@And("Enter the correct password")
-	public void enterPassword() {
-		driver.findElement(By.id("password")).sendKeys("crmsfa");
-	}
-	
+
 	@When("user clicks on login button")
 	public void clickLogin() {
 		driver.findElement(By.className("decorativeSubmit")).click();
 	}
-	
-	@Then("verify login attempt is successfull")
+
+	@Then("verify login attempt")
 	public void verifyLogin() {
 		if(driver.getTitle().contains("Leaftaps")){
 			System.out.println("Login successful");
@@ -45,7 +35,5 @@ public class Login {
 			System.out.println("Login failed");
 		}
 	}
-	
 
-	
 }
