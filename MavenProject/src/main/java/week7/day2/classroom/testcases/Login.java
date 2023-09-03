@@ -10,7 +10,7 @@ public class Login extends ProjectSpecificMethods{
 	@Test	
 	public void runLogin() {
 		LoginPage lp = new LoginPage();
-		lp.enterUsername().enterPassword().clickLogin().clickCRMSFA().clickLead();
+		lp.enterUsername().enterPassword().clickLogin();
 		if(driver.getTitle().contains("My Home")) {
 			System.out.println("Successfully logged in and langed in Home page");
 		}
