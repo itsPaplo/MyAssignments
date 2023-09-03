@@ -2,46 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9531" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:17 IST">
+  <suite name="Default suite" duration-ms="12649" started-at="2023-09-03T12:42:27 IST" finished-at="2023-09-03T12:42:39 IST">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="9531" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:17 IST">
-      <class name="runner.RunnerClass">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="setUpClass" is-config="true" duration-ms="197" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:08 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@58d6b7b9]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="12649" started-at="2023-09-03T12:42:27 IST" finished-at="2023-09-03T12:42:39 IST">
+      <class name="week7.day2.classroom.testcases.Login">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:week7.day2.classroom.testcases.Login@5f16132a]" name="preCondition" is-config="true" duration-ms="7199" started-at="2023-09-03T12:42:27 IST" finished-at="2023-09-03T12:42:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="runScenario" duration-ms="9296" started-at="2023-09-02T11:11:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-02T11:11:17 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with correct credential"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runLogin()[pri:0, instance:week7.day2.classroom.testcases.Login@5f16132a]" name="runLogin" duration-ms="5223" started-at="2023-09-03T12:42:34 IST" finished-at="2023-09-03T12:42:39 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunnerClass@2f8dad04]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2023-09-02T11:11:17 IST" finished-at="2023-09-02T11:11:17 IST">
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:week7.day2.classroom.testcases.Login@5f16132a]" name="postCondition" is-config="true" duration-ms="194" started-at="2023-09-03T12:42:39 IST" finished-at="2023-09-03T12:42:39 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.RunnerClass -->
+        </test-method> <!-- postCondition -->
+      </class> <!-- week7.day2.classroom.testcases.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
