@@ -1,315 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="94385" started-at="2023-08-27T10:13:56 IST" finished-at="2023-08-27T10:15:30 IST">
+  <suite name="Default suite" duration-ms="9531" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:17 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Leads" duration-ms="94385" started-at="2023-08-27T10:13:56 IST" finished-at="2023-08-27T10:15:30 IST">
-      <class name="week6.day2.classroom.DeleteLead">
-        <test-method status="PASS" signature="setSheet()[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="setSheet" is-config="true" duration-ms="0" started-at="2023-08-27T10:13:56 IST" finished-at="2023-08-27T10:13:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setSheet -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="preCondition" is-config="true" duration-ms="5737" started-at="2023-08-27T10:14:55 IST" finished-at="2023-08-27T10:15:00 IST">
+    <test name="Default test" duration-ms="9531" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:17 IST">
+      <class name="runner.RunnerClass">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="setUpClass" is-config="true" duration-ms="197" started-at="2023-09-02T11:11:08 IST" finished-at="2023-09-02T11:11:08 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
+                <![CDATA[org.testng.TestRunner@58d6b7b9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@2f8dad04]" name="runScenario" duration-ms="9296" started-at="2023-09-02T11:11:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-02T11:11:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credential"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runDelete(java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="runDelete" duration-ms="6118" started-at="2023-08-27T10:15:00 IST" data-provider="fetchData" finished-at="2023-08-27T10:15:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[99]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunnerClass@2f8dad04]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2023-09-02T11:11:17 IST" finished-at="2023-09-02T11:11:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runDelete -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="postCondition" is-config="true" duration-ms="213" started-at="2023-08-27T10:15:06 IST" finished-at="2023-08-27T10:15:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="preCondition" is-config="true" duration-ms="6625" started-at="2023-08-27T10:15:07 IST" finished-at="2023-08-27T10:15:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runDelete(java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="runDelete" duration-ms="5992" started-at="2023-08-27T10:15:13 IST" data-provider="fetchData" finished-at="2023-08-27T10:15:19 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[97]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runDelete -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="postCondition" is-config="true" duration-ms="147" started-at="2023-08-27T10:15:19 IST" finished-at="2023-08-27T10:15:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="preCondition" is-config="true" duration-ms="5048" started-at="2023-08-27T10:15:19 IST" finished-at="2023-08-27T10:15:24 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runDelete(java.lang.String)[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="runDelete" duration-ms="5511" started-at="2023-08-27T10:15:24 IST" data-provider="fetchData" finished-at="2023-08-27T10:15:30 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[87]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runDelete -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.DeleteLead@be35cd9]" name="postCondition" is-config="true" duration-ms="293" started-at="2023-08-27T10:15:30 IST" finished-at="2023-08-27T10:15:30 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- week6.day2.classroom.DeleteLead -->
-      <class name="week6.day2.classroom.CreateLead">
-        <test-method status="PASS" signature="setSheet()[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="setSheet" is-config="true" duration-ms="8" started-at="2023-08-27T10:13:56 IST" finished-at="2023-08-27T10:13:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setSheet -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="preCondition" is-config="true" duration-ms="8717" started-at="2023-08-27T10:13:57 IST" finished-at="2023-08-27T10:14:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="runCreate" duration-ms="8868" started-at="2023-08-27T10:14:05 IST" data-provider="fetchData" finished-at="2023-08-27T10:14:14 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestLeaf]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Stephen]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runCreate -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="postCondition" is-config="true" duration-ms="417" started-at="2023-08-27T10:14:14 IST" finished-at="2023-08-27T10:14:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="preCondition" is-config="true" duration-ms="6593" started-at="2023-08-27T10:14:15 IST" finished-at="2023-08-27T10:14:21 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="runCreate" duration-ms="7442" started-at="2023-08-27T10:14:21 IST" data-provider="fetchData" finished-at="2023-08-27T10:14:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Qeagle]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Warrick]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[R]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runCreate -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="postCondition" is-config="true" duration-ms="143" started-at="2023-08-27T10:14:29 IST" finished-at="2023-08-27T10:14:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="preCondition" is-config="true" duration-ms="5459" started-at="2023-08-27T10:14:29 IST" finished-at="2023-08-27T10:14:34 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="runCreate" duration-ms="5930" started-at="2023-08-27T10:14:34 IST" data-provider="fetchData" finished-at="2023-08-27T10:14:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestLeaf]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Marcus]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[K]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runCreate -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="postCondition" is-config="true" duration-ms="240" started-at="2023-08-27T10:14:40 IST" finished-at="2023-08-27T10:14:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="preCondition" is-config="true" duration-ms="5773" started-at="2023-08-27T10:14:40 IST" finished-at="2023-08-27T10:14:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="runCreate" duration-ms="7904" started-at="2023-08-27T10:14:46 IST" data-provider="fetchData" finished-at="2023-08-27T10:14:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IQVIA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Philip]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runCreate -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week6.day2.classroom.CreateLead@5fd4f8f5]" name="postCondition" is-config="true" duration-ms="328" started-at="2023-08-27T10:14:54 IST" finished-at="2023-08-27T10:14:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- week6.day2.classroom.CreateLead -->
-    </test> <!-- Leads -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunnerClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

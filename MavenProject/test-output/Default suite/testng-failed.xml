@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week6.day1.classroom.EditLead">
+      <class name="runner.RunnerClass">
         <methods>
-          <include name="postCondition"/>
-          <include name="runEdit"/>
-          <include name="preCondition"/>
-          <include name="setSheet"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- week6.day1.classroom.EditLead -->
+      </class> <!-- runner.RunnerClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
