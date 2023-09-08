@@ -20,4 +20,5 @@ public class LoginPage extends ProjectSpecificMethods{
 		driver.findElement(By.className("decorativeSubmit")).click();
 		return new WelcomePage();
 	}
+
 }
