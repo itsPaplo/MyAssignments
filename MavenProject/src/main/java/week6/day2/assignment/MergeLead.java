@@ -15,10 +15,10 @@ public class MergeLead extends BaseClass {
 	
 	@BeforeTest
 	public void setExcel() {
-		shtNm = "MergeLead";
+		sheetname = "MergeLead";
 	}
 
-	@Test
+	@Test(dataProvider = "fetchTData")
 	public void runMerge(String fromFnm, String toFnm) {
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[text()='Merge Leads']")))).click();
 		String mcwh = driver.getWindowHandle();	

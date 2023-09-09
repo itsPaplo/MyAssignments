@@ -9,10 +9,10 @@ public class DuplicateLead extends BaseClass{
 	
 	@BeforeTest
 	public void setExcel() {
-		shtNm = "Phone";
+		sheetname = "Phone";
 	}
 
-	@Test
+	@Test(dataProvider = "fetchTData")
 	public void runDuplicate(String phn) {
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.linkText("Find Leads")))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//span[text()='Phone']/ancestor::a")))).click();
