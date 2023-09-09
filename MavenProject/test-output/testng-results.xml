@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15260" started-at="2023-09-09T10:36:09 IST" finished-at="2023-09-09T10:36:24 IST">
+  <suite name="Suite" duration-ms="25523" started-at="2023-09-09T11:19:15 IST" finished-at="2023-09-09T11:19:41 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15260" started-at="2023-09-09T10:36:09 IST" finished-at="2023-09-09T10:36:24 IST">
+    <test name="Test" duration-ms="25523" started-at="2023-09-09T11:19:15 IST" finished-at="2023-09-09T11:19:41 IST">
       <class name="week8.day1.testcases.CreateLeadsTC">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:week8.day1.testcases.CreateLeadsTC@51b279c9]" name="preCondition" is-config="true" duration-ms="5860" started-at="2023-09-09T10:36:09 IST" finished-at="2023-09-09T10:36:15 IST">
+        <test-method status="PASS" signature="setSheet()[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="setSheet" is-config="true" duration-ms="6" started-at="2023-09-09T11:19:15 IST" finished-at="2023-09-09T11:19:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setSheet -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="preCondition" is-config="true" duration-ms="5402" started-at="2023-09-09T11:19:16 IST" finished-at="2023-09-09T11:19:21 IST">
           <params>
             <param index="0">
               <value>
@@ -18,17 +22,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runCreate()[pri:0, instance:week8.day1.testcases.CreateLeadsTC@51b279c9]" name="runCreate" duration-ms="9119" started-at="2023-09-09T10:36:15 IST" finished-at="2023-09-09T10:36:24 IST">
+        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="runCreate" duration-ms="8781" started-at="2023-09-09T11:19:21 IST" data-provider="fetchTestData" finished-at="2023-09-09T11:19:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestLeaf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hari]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9999999999]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runCreate -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week8.day1.testcases.CreateLeadsTC@51b279c9]" name="postCondition" is-config="true" duration-ms="249" started-at="2023-09-09T10:36:24 IST" finished-at="2023-09-09T10:36:24 IST">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="postCondition" is-config="true" duration-ms="202" started-at="2023-09-09T11:19:30 IST" finished-at="2023-09-09T11:19:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="preCondition" is-config="true" duration-ms="3161" started-at="2023-09-09T11:19:30 IST" finished-at="2023-09-09T11:19:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="runCreate" duration-ms="7194" started-at="2023-09-09T11:19:33 IST" data-provider="fetchTestData" finished-at="2023-09-09T11:19:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Qeagle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Babu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[I]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9899999999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreate -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:week8.day1.testcases.CreateLeadsTC@60438a68]" name="postCondition" is-config="true" duration-ms="151" started-at="2023-09-09T11:19:41 IST" finished-at="2023-09-09T11:19:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- week8.day1.testcases.CreateLeadsTC -->
       <class name="week8.day1.testcases.LoginTC">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:week8.day1.testcases.LoginTC@281e3708]" name="preCondition" is-config="true" duration-ms="7166" started-at="2023-09-09T10:36:09 IST" finished-at="2023-09-09T10:36:16 IST">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:week8.day1.testcases.LoginTC@1da51a35]" name="preCondition" is-config="true" duration-ms="6000" started-at="2023-09-09T11:19:15 IST" finished-at="2023-09-09T11:19:21 IST">
           <params>
             <param index="0">
               <value>
@@ -39,11 +106,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="runLogin()[pri:0, instance:week8.day1.testcases.LoginTC@281e3708]" name="runLogin" duration-ms="3062" started-at="2023-09-09T10:36:16 IST" finished-at="2023-09-09T10:36:19 IST">
+        <test-method status="PASS" signature="runLogin()[pri:0, instance:week8.day1.testcases.LoginTC@1da51a35]" name="runLogin" duration-ms="1948" started-at="2023-09-09T11:19:21 IST" finished-at="2023-09-09T11:19:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:week8.day1.testcases.LoginTC@281e3708]" name="postCondition" is-config="true" duration-ms="673" started-at="2023-09-09T10:36:19 IST" finished-at="2023-09-09T10:36:20 IST">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:week8.day1.testcases.LoginTC@1da51a35]" name="postCondition" is-config="true" duration-ms="1061" started-at="2023-09-09T11:19:23 IST" finished-at="2023-09-09T11:19:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->

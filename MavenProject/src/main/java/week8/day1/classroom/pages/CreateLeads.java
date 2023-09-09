@@ -11,18 +11,23 @@ public class CreateLeads extends ProjectSpecificMethods{
 		this.driver = driver;
 	}
 
-	public CreateLeads enterCompanyName() {
-		driver.findElement(By.id("createLeadForm_companyName")).sendKeys("TestLeaf");
+	public CreateLeads enterCompanyName(String compNm) {
+		driver.findElement(By.id("createLeadForm_companyName")).sendKeys(compNm);
 		return new CreateLeads(driver);
 	}
 
-	public CreateLeads enterFirstName() {
-		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Hari");
+	public CreateLeads enterFirstName(String frstNm) {
+		driver.findElement(By.id("createLeadForm_firstName")).sendKeys(frstNm);
 		return this;
 	}
 	
-	public CreateLeads enterLastName() {
-		driver.findElement(By.id("createLeadForm_lastName")).sendKeys("R");
+	public CreateLeads enterLastName(String lastNm) {
+		driver.findElement(By.id("createLeadForm_lastName")).sendKeys(lastNm);
+		return this;
+	}
+	
+	public CreateLeads enterPhoneNo(String phn) {
+		driver.findElement(By.xpath("//input[contains(@id,'primaryPhoneNumber')]")).sendKeys(phn);
 		return this;
 	}
 	
